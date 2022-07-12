@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function ListEmployee({employees, deleteEmployee}){
+function ListEmployee({employees, updateEmployees, deleteEmployee}){
     return(
 
         <div className="displaying">
@@ -25,7 +25,7 @@ function ListEmployee({employees, deleteEmployee}){
                                 <td>{employee.lastName}</td> 
                                 <td>{employee.email}</td>
                                 <td>
-                                    <button>edit</button>
+                                    <button onClick={()=>updateEmployees(employee.id)}>edit</button>
                                     <button onClick={()=>deleteEmployee(employee.id)}>delete</button>
                                 </td>
                             </tr>

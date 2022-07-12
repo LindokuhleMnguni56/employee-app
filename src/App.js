@@ -43,7 +43,7 @@ const updateEmployees =async(id)=> {
     <div className="App">
         <AddEmployee setName={setName} setSurname={setSurname} setEmail={setEmail} addEmployee={addEmployee} />
 
-        <ListEmployee employees={employees} deleteEmployee={deleteEmployee}/>
+        <ListEmployee employees={employees} updateEmployees={updateEmployees} deleteEmployee={deleteEmployee}/>
     </div>
   );
 }
